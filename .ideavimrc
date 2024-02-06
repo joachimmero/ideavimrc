@@ -19,7 +19,7 @@ map <leader>d <Action>(Debug)
 map <leader>b <Action>(ToggleLineBreakpoint)
 map <leader>e <Action>(GotoNextError)
 map <leader>o <Action>(FileStructurePopup)
-map <C-p> <Action>(PreviousTab)
 map <C-n> <Action>(NextTab)
+map <C-p> <Action>(PreviousTab)
 
 set relativenumber number
