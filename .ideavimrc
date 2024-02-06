@@ -13,6 +13,8 @@ let mapleader= " "
 map <leader>r <Action>(RenameElement)
 map / <Action>(Find)
 map <leader>ff <Action>(SearchEverywhere)
+map <leader>gd <Action>(GotoDeclaration)
+map <leader>fu <Action>(ShowUsages)
 map <leader>n <Action>(NewClass)
 map <leader>t <Action>(RefactoringMenu)
 map <leader>d <Action>(Debug)
