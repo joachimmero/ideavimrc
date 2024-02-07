@@ -10,7 +10,7 @@ map Q gq
 
 let mapleader= " "
 
-map <leader>r <Action>(RenameElement)
+map <leader>re <Action>(RenameElement)
 map / <Action>(Find)
 map <leader>ff <Action>(SearchEverywhere)
 map <leader>gd <Action>(GotoDeclaration)
@@ -23,5 +23,6 @@ map <leader>e <Action>(GotoNextError)
 map <leader>o <Action>(FileStructurePopup)
 map <C-n> <Action>(NextTab)
 map <C-p> <Action>(PreviousTab)
+map <leader>co <Action>(CloseAllEditorsButActive)
 
 set relativenumber number
