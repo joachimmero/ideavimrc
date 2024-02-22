@@ -1,19 +1,18 @@
-set scrolloff=10
+set scrolloff=20
 
 set NERDTree
 set RenameElement
 
 set incsearch
-
 map Q gq
 
 
 let mapleader= " "
 
 map <leader>re <Action>(RenameElement)
-map / <Action>(Find)
 map <leader>ff <Action>(SearchEverywhere)
 map <leader>gd <Action>(GotoDeclaration)
+map <leader>gi <Action>(GotoImplementation)
 map <leader>fu <Action>(ShowUsages)
 map <leader>n <Action>(NewClass)
 map <leader>t <Action>(RefactoringMenu)
@@ -24,6 +23,7 @@ map <leader>o <Action>(FileStructurePopup)
 map <C-n> <Action>(NextTab)
 map <C-p> <Action>(PreviousTab)
 map <leader>co <Action>(CloseAllEditorsButActive)
+map <leader>cc <Action>(Close)
 
 nnoremap <leader>pv :NERDTreeToggle<CR>
 
