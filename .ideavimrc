@@ -4,6 +4,8 @@ set NERDTree
 set RenameElement
 
 set incsearch
+set ignorecase
+set smartcase
 map Q gq
 
 
@@ -22,12 +24,18 @@ map <leader>e <Action>(GotoNextError)
 map <leader>o <Action>(FileStructurePopup)
 map <C-n> <Action>(NextTab)
 map <C-p> <Action>(PreviousTab)
+map <C-o> <Action>(Back)
+map <C-i> <Action>(Forward)
 map <leader>co <Action>(CloseAllEditorsButActive)
 map <leader>cc <Action>(Close)
+map <A-r>tu <Action>(ActivateUnitTestToolWindow)
 
-nnoremap <leader>pv :NERDTreeToggle<CR>
+nnoremap <leader>pv :NERDTreeFocus<CR>
 
 nnoremap <A-j> :m .+1<CR>
 nnoremap <A-k> :m .-2<CR>
+
+vnoremap <A-j> :m .+1<CR>
+vnoremap <A-k> :m .-2<CR>
 
 set relativenumber number
